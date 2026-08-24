@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 생성 삽입 삭제 복제</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <script src="./scripts/dom02.js" defer></script>
+    <style>
+        header {}
+        header .d_menu {}
+        header .d_menu nav {}
+        header .d_menu nav a {color:#00f;} /* nav부터 a는 js로 인해 복제가 되어 css에서도 태그를 작성해도 적용이 가능 */
+        header .m_menu {}
+        header .m_menu nav {}
+        header .m_menu nav a {color:#f00;}
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 데스크탑 메뉴(JS 동적붙여넣기대상) -->
+        <div class="d_menu"><!-- 붙여넣기위치 --></div>
+        <!-- 모바일 메뉴(태그o) -->
+        <div class="m_menu">
+            <nav>
+                <a href="#">Intro</a>
+                <a href="#">About</a>
+                <a href="#">Project</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
